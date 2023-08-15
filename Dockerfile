@@ -1,4 +1,4 @@
-FROM openjdk:8-jre
+FROM eclipse-temurin:8-jre
 
 MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
 
@@ -15,7 +15,7 @@ WORKDIR /minecraft
 # Creating user and downloading files
 RUN useradd -m -U minecraft && \
 	mkdir -p /minecraft/world && \
-	wget --no-check-certificate https://api.modpacks.ch/public/modpack/100/6479/server/linux -O serverinstall_100_6479 && \
+	wget --no-check-certificate https://api.modpacks.ch/public/modpack/100/6647/server/linux -O serverinstall_100_6647 && \
 	chmod u+x serverinstall_* && \
 	./serverinstall_* --auto && \
 	rm serverinstall_* && \
