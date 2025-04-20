@@ -1,4 +1,4 @@
-FROM eclipse-temurin:8-jre
+FROM eclipse-temurin:17-jre
 
 MAINTAINER Jonas Bonno Mikkelsen (https://github.com/JonasBonno)
 
